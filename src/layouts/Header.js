@@ -2,11 +2,11 @@ import React from 'react'
 import NavBar from './NavBar'
 function Header() {
   return (
-    <header class="main-header">
-      <a href="#" class="logo">
-        <span class="logo-mini">
+    <header className="main-header">
+      <a href="/" className="logo">
+        <span className="logo-mini">
           <b>R</b>B</span>
-        <span class="logo-lg">
+        <span className="logo-lg">
           <b>React</b>Book</span>
       </a>
       <NavBar/>

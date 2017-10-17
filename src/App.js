@@ -6,11 +6,20 @@ import Header from './layouts/Header'
 
 class App extends React.Component {
   render() {
+    const items = [
+      {
+        type: 'Books',
+        url: '/'
+      }, {
+        type: 'Categories',
+        url: '/'
+      }
+    ]
     return (
       <div>
-      <Header/>
-        <SideBar/>
-        <ContentArea/>
+        <Header/>
+        <SideBar items={items}/>
+        <ContentArea items={this.props.items}/>
         <Footer/>
       </div>
     )

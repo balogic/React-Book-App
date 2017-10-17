@@ -1,11 +1,14 @@
 import React from 'react'
+import Item from '../Item'
 class ContentArea extends React.Component {
   render() {
     return (
-      <div class="content-wrapper">
-        <section class="content-header">
+      <div className="content-wrapper">
+        <section className="content-header">
+          <h2>{this.props.items.toUpperCase()}</h2>
         </section>
-        <section class="content">
+        <section className="content">
+          <Item items={this.props.items}/>
         </section>
       </div>
     )

@@ -6,12 +6,12 @@ function NavBar() {
     description: "Mr.Robot"
   }
   return (
-    <nav class="navbar navbar-static-top">
-      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
-        <span class="sr-only">Toggle navigation</span>
+    <nav className="navbar navbar-static-top">
+      <a href="/" className="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span className="sr-only">Toggle navigation</span>
       </a>
-      <div class="navbar-custom-menu">
-        <ul class="nav navbar-nav">
+      <div className="navbar-custom-menu">
+        <ul className="nav navbar-nav">
           <ProfileTab user={user}/>
         </ul>
       </div>
